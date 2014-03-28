@@ -1,0 +1,7 @@
+#compdef quickly
+
+local options
+options=`ls -1 ~/.quickly | tr '\n' ' '`
+
+_arguments "1: :($options)"
+
